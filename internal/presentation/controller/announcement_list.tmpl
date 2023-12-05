@@ -1,0 +1,9 @@
+All announcements: {{ . | len }}
+{{ range . }}
+
+<h3>Id: {{ .Id }} <h3>
+<h3>Fname: {{ .Address }} <h3>
+<h3>Lname: {{ .Target }} <h3>
+<h3>Age: {{ .PhoneNumber }} <h3>
+
+{{ end }}
